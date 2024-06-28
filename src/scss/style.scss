@@ -79,13 +79,27 @@ main {
   &__title {
     color: m.color(neutral__white);
     font-size: var(--fs-1);
+    font-weight: m.weight(bold);
     margin-bottom: 0.5rem;
+  }
+
+  &__title--link {
+    text-decoration: none;
+    color: m.color(neutral__white);
+    text-decoration-thickness: 0.125rem;
+    text-underline-offset: 0.25rem;
+    transition: 0.125s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: m.color(primary__cyan);
+    }
   }
 
   &__text {
     font-size: var(--fs--1);
     color: m.color(primary__soft-blue);
-    font-weight: m.weight(light);
+    font-weight: m.weight(regular);
     margin-bottom: 0.75rem;
   }
 
@@ -137,6 +151,15 @@ main {
   }
 
   &__profile--text__author {
+    text-decoration: none;
+    font-weight: m.weight(semibold);
     color: m.color(neutral__white);
+    transition: 0.125s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: m.color(primary__cyan);
+      text-decoration-thickness: 0.125rem;
+    }
   }
 }
