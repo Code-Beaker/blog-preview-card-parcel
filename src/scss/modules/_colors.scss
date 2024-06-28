@@ -1,0 +1,12 @@
+$colors: (
+  primary__soft-blue: hsl(215, 51%, 70%),
+  primary__cyan: hsl(178, 100%, 50%),
+  neutral__very-dark-blue-main: hsl(217, 54%, 11%),
+  neutral__very-dark-blue-card: hsl(216, 50%, 16%),
+  neutral__very-dark-blue-line: hsl(215, 32%, 27%),
+  neutral__white: hsl(0, 0%, 100%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

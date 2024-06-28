@@ -1,0 +1,14 @@
+body {
+  font-family: "Outfit", system-ui, -apple-system, Roboto, sans-serif;
+}
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  semibold: 600,
+  bold: 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
