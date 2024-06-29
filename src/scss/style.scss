@@ -128,8 +128,9 @@ main {
   }
 
   hr {
-    color: m.color(neutral__very-dark-blue-line);
     margin-block: 1rem;
+    // padding: 1rem;
+    border-color: m.color(neutral__very-dark-blue-line);
   }
 
   &__profile {
